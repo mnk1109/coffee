@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+/****** 共通基本設定
+******************************************************/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #fff;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* 外枠・コンテンツ中央設定  */
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* ヘッダー */
+.header {
+  margin-bottom: 40px;
+}
+.header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.header h1 {
+  margin: 0 0 0 10px;
+  height: 20px;
+  font-size: 12px;
+  color: #3e3e3e;
+}
+
+/* ナビゲーション */
+.navigation_main {
+  width: 100%;
+}
+.navigation_main ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navigation_main li {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.navigation_main a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.navigation_main a:visited {
+  color: #3e3e3e;
+}
+.navigation_main a:hover {
+  color: #7b7b7b;
+}
+
+/* コンテンツエリア設定 */
+.main_content {
+  width: 960px;
+}
+.main_content h2 {
+  font-size: 42px;
+  color: #3e3e3e;
+  font-weight: bold;
+  position: middle;
+}
+.main_content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* フッター */
+.footer {
+  width: 960px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: dotted 1px #3e3e3e;
+}
+.footer .footer_info {
+  width: 30%;
+}
+.footer_info h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .footer_info ul {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.footer .footer_navigation  {
+  width: 30%;
+}
+/* .footer .footer_navigation small {
+  position: relative;
+  top: 40%;
+  color: #3e3e3e;
+} */
+.footer .footer_navigation ul {
+  list-style: none;
+}
+.footer .footer_navigation ul li {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #3e3e3e;
+  font-weight: bold;
+  text-align: right;
+}
+.footer .footer_navigation ul li a {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.footer .footer_navigation ul li a:hover {
+  color: #7b7b7b;
+}
+/****** index.html用
+******************************************************/
+/* メインコンテンツエリア */
+.feature-area {
+  width: 960px;
+  margin: auto;
+}
+.feature-area .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 100px 0;
+}
+.feature-area .item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.feature-area .item_img {
+  width: 48%;
+}
+.feature-area .item_img img {
+  width: 100%;
+}
+.feature-area .item_body {
+  width: 48%;
+}
+/* ニュースエリア */
+.news {
+  margin: 0 auto 100px auto; 
+}
+.news h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+.news ul {
+  list-style-type: none;
+}
+.news ul li {
+  font-size: 20px;
+  color: #3e3e3e;
+}
+/****** menu.html用
+******************************************************/
+.menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu_img img {
+  height: auto;
+  width: 276px;
+}
+.menu_navigation ul {
+  margin-bottom: -5px;
+  list-style: none;
+} 
+.menu_navigation ul li {
+  padding-top: 10px;
+  list-style: none;
+  font-size: 24px;
+}
+.menu_navigation a:link {
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.menu_navigation a:visited {
+  color: #3e3e3e;
+}
+.menu_navigation a:hover {
+  color: #7b7b7b;
+}
+.menu_main {
+  margin: 100px 0;
+  text-align: center;
+}
+.menu_main ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.menu_main ul li {
+  border-bottom: 20px;
+  font-size: 20px;
+}
+/****** アクセスページ
+******************************************************/
+.map {
+  margin-bottom: 40px;
+}
+.tablestyle iframe {
+  margin-bottom: 40px;
+}
+
+/****** コンタクトページ
+******************************************************/
+.contact-form {
+  margin-bottom: 50px;
+}
+/* お問い合わせフォーム */
+form {
+  width: 100%;
+}
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+form li {
+  padding: 6px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+form li#send {
+  background: none;
+  margin-top: 6px;
+}
+form label {
+  width: 20%;
+}
+form input,
+form textarea {
+  width: 70%;
+  padding: 20px;
+  border: 1px solid #3f312b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form input:focus,
+form textarea:focus {
+  border: 1px solid #3f312b;
+  background: #d8ccc6;
+}
+form li#send button {
+  width: 20%;
+  padding: 10px 0;
+  background: #3f312b;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+form li#send button:hover {
+  background-color: #7c6a62;
+}
+
+
+/* お問い合わせフォーム */
